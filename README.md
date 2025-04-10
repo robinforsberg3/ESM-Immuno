@@ -14,7 +14,7 @@ widely used for learning structural and functional features of proteins based on
 availability is limited by fine-tuning the models on task-specific datasets (Zhang and Liu, 2024). Fine-tuning protein models on downstream tasks such as immunogenicity prediction is computationally
 expensive, thus parameter efficient fine-tuning methods are incorporated in this project. 
 
-# Methods:
+## Materials and Methods:
 The dataset in this project was obtained from The Cancer Epitope Database and Analysis Resource (CEDAR) which can be downloaded from here: https://cedar.iedb.org/. The selection criteria to generate the
 dataset is as follows: Include Positive Assays, Include Negative Assays, No MHC assays, No B cell assays, MHC Restriction Type: Class I, Host: Homo sapiens (human), Exclude viral antigens, Exclude
 germline/self/host antigens. The dataset contains both the mutated and wild-type peptide along with its corresponding HLA class 1 allele, immune response, and assay type used to determine T cell activity.
@@ -36,24 +36,27 @@ classification, a classification head is attached to the end of the model. To pa
 applied to dense layers of the network, freezing all other layers except for the output projection layer of the classification head. As a result 233,282 parameters out of the full 8,067,009 of the model
 is trained. The model was trained for 16 epochs with batch size of 8.
 
-# Results:
+## Results:
 To investigate immunogenicity prediction ESM-2 was fine-tuned using LoRA on cancer neoantigen data from CEDAR for 16 epochs on the training set and thereafter validated using the validation set. Validation
 accuracy reached 84% with 84 samples correctly classified as immunogenic, 79 non-immunogenic, 18 false positives and 13 false negatives. This shows the model is effective at differentiating immunogenic
 from non-immunogenic neoantigens based solely on amino acid sequence. This is supported by AUC score of 0.87, indicating a well-seperated decision boundary. All three alleles that were not present in the
 training set were correctly classified, indicating the models ability to generalise to unseen alleles. 
+![accuracy](https://github.com/user-attachments/assets/348dc8bd-8532-43f9-8557-38540a5434a3)
 
-# Discussion:
+## Discussion:
 To address small and often biased neo-antigen datasets, this project utilized structural and functional protein representations learned through fine-tuning a pre-trained protein language model, ESM-2,
 allowing the model to focus on immunogenic specific features instead of relearning general protein properties. This can be demonstrated through high accuracy and high AUC score on a task-specific
 neoantigen dataset. The model was able to generalize to unseen alleles, however only three examples is not sufficient to confidently assess this and only functions as promising potential. 
 This project narrowed the scope of neo-antigen datasets filtering by assay type biological activity, limiting experimental bias. Although the model performed reasonably well, the dataset is not
-significantly large enough to confidently assess the models performance in a realistic clinical setting where the pool of peptides is magnitudes larger.  Another bottleneck of a limited training dataset is
-the lack of exposure to HLA alleles, although this project incorporated A, B, and C alleles, more alleles would allow the model to learn more generalizable relationships across alleles. Future analysis
-will involve performance comparison against other state-of-the-art models on the dataset used in this project, along with other published neoantigen datasets. This will allow for realistic assessment of
-model performance. Although the field is progressing at a fast pace there is still a significant lack of high quality harmonised datasets that can serve as a benchmark to assess and develop more clinically
-relevant models. More research is needed through closely working with clinics and wet labs to produce and assess more reliable and relevant models and datasets. 
+significantly large enough to confidently assess the models performance in a realistic clinical setting where the pool of peptides is magnitudes larger.  
 
-# References:
+Another bottleneck of a limited training dataset is the lack of exposure to HLA alleles, although this project incorporated A, B, and C alleles, more alleles would allow the model to learn more
+generalizable relationships across alleles. Future analysis will involve performance comparison against other state-of-the-art models on the dataset used in this project, along with other published
+neoantigen datasets. This will allow for realistic assessment of model performance. Although the field is progressing at a fast pace there is still a significant lack of high quality harmonised datasets
+that can serve as a benchmark to assess and develop more clinically relevant models. More research is needed through closely working with clinics and wet labs to produce and assess more reliable and
+relevant models and datasets. 
+
+## References:
 Albert, B.A., Yang, Y., Shao, X.M., Singh, D., Smith, K.N., Anagnostou, V. and Karchin, R. (2023). Deep neural networks predict class I major histocompatibility complex epitope presentation and transfer
 learn neoepitope immunogenicity. Nature Machine Intelligence, [online] pp.1–12. doi:https://doi.org/10.1038/s42256-023-00694-6.
 
