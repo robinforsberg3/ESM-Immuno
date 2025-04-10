@@ -37,13 +37,13 @@ applied to dense layers of the network, freezing all other layers except for the
 is trained. The model was trained for 16 epochs with batch size of 8.
 
 ## Results:
-To investigate immunogenicity prediction ESM-2 was fine-tuned using LoRA on cancer neoantigen data from CEDAR for 16 epochs on the training set and thereafter validated using the validation set. Validation
-accuracy reached 84% with 84 samples correctly classified as immunogenic, 79 non-immunogenic, 18 false positives and 13 false negatives. This shows the model is effective at differentiating immunogenic
-from non-immunogenic neoantigens based solely on amino acid sequence. This is supported by AUC score of 0.87, indicating a well-seperated decision boundary. All three alleles that were not present in the
-training set were correctly classified, indicating the models ability to generalise to unseen alleles. 
+To investigate immunogenicity prediction ESM-2 was fine-tuned using LoRA on cancer neoantigen data from CEDAR for 16 epochs on the training set and thereafter validated using the validation set.
+*Validation accuracy reached 84%* with 84 samples correctly classified as immunogenic, 79 non-immunogenic, 18 false positives and 13 false negatives. This shows the model is effective at differentiating
+immunogenic from non-immunogenic neoantigens based solely on amino acid sequence. This is supported by *AUC score of 0.87*, indicating a well-seperated decision boundary. All three alleles that were not
+present in the training set were correctly classified, indicating the models ability to generalise to unseen alleles. 
 
 <div align="center">
-    <table border="0" cellspacing="0" cellpadding="10">
+    <table border="none" cellspacing="0" cellpadding="10">
         <tr>
             <td align="center">
                 <img src="https://github.com/user-attachments/assets/c52fbaa9-35f1-4d19-b80a-57cd9295f7a0" width="400" />
