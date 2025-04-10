@@ -54,7 +54,12 @@ training set were correctly classified, indicating the models ability to general
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/9645d944-1b8f-4df9-ab72-4818f3736c45" width="400" />
+</div>
+
 ## Discussion:
+
 To address small and often biased neo-antigen datasets, this project utilized structural and functional protein representations learned through fine-tuning a pre-trained protein language model, ESM-2,
 allowing the model to focus on immunogenic specific features instead of relearning general protein properties. This can be demonstrated through high accuracy and high AUC score on a task-specific
 neoantigen dataset. The model was able to generalize to unseen alleles, however only three examples is not sufficient to confidently assess this and only functions as promising potential. 
