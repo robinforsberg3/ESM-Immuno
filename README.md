@@ -50,7 +50,7 @@ training set were correctly classified, indicating the models ability to general
 </div>
 
 <!-- vertical spacing -->
-<div style="height: 50px;"></div>
+<div style="height: 200px;"></div>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ef685c21-1da2-469a-883c-d083a2f6ad7b" width="200"/>
