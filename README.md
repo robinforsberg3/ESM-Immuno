@@ -44,6 +44,7 @@ training set were correctly classified, indicating the models ability to general
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/c52fbaa9-35f1-4d19-b80a-57cd9295f7a0" width="400" />
+                                             Accuracy
     <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" width="400" />
 </div>
 
