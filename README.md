@@ -45,19 +45,9 @@ training set were correctly classified, indicating the models ability to general
 <div align="center">
   <div style="display: inline-block; text-align: center; margin-right: 50px;">
     <img src="https://github.com/user-attachments/assets/c52fbaa9-35f1-4d19-b80a-57cd9295f7a0" width="400" />
-    <div><em>Accuracy</em></div>
     <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" width="400" />
-    <div><em>AUC</em></div>
 </div>
 
-<div class="row">
-  <div class="column">
-    <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" alt="Snow" width="400">
-  </div>
-  <div class="column">
-    <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" alt="Forest" width="400">
-  </div>
-</div>
 
 ## Discussion:
 To address small and often biased neo-antigen datasets, this project utilized structural and functional protein representations learned through fine-tuning a pre-trained protein language model, ESM-2,
