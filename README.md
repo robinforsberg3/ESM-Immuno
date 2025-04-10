@@ -43,7 +43,6 @@ from non-immunogenic neoantigens based solely on amino acid sequence. This is su
 training set were correctly classified, indicating the models ability to generalise to unseen alleles. 
 
 <div align="center">
-  <div style="display: inline-block; text-align: center; margin-right: 50px;">
     <img src="https://github.com/user-attachments/assets/c52fbaa9-35f1-4d19-b80a-57cd9295f7a0" width="400" />
     <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" width="400" />
 </div>
