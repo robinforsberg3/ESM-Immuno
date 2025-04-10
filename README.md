@@ -52,10 +52,10 @@ training set were correctly classified, indicating the models ability to general
 
 <div class="row">
   <div class="column">
-    <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" alt="Snow" style="width:100%">
+    <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" alt="Snow" width="400">
   </div>
   <div class="column">
-    <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" alt="Forest" style="width:100%">
+    <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" alt="Forest" width="400">
   </div>
 </div>
 
