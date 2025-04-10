@@ -41,7 +41,8 @@ To investigate immunogenicity prediction ESM-2 was fine-tuned using LoRA on canc
 accuracy reached 84% with 84 samples correctly classified as immunogenic, 79 non-immunogenic, 18 false positives and 13 false negatives. This shows the model is effective at differentiating immunogenic
 from non-immunogenic neoantigens based solely on amino acid sequence. This is supported by AUC score of 0.87, indicating a well-seperated decision boundary. All three alleles that were not present in the
 training set were correctly classified, indicating the models ability to generalise to unseen alleles. 
-![accuracy](https://github.com/user-attachments/assets/348dc8bd-8532-43f9-8557-38540a5434a3)
+
+![accuracy](https://github.com/user-attachments/assets/348dc8bd-8532-43f9-8557-38540a5434a3) ![AUC](https://github.com/user-attachments/assets/7ef89994-59c2-4aed-8ac5-ad59a4342978)
 
 ## Discussion:
 To address small and often biased neo-antigen datasets, this project utilized structural and functional protein representations learned through fine-tuning a pre-trained protein language model, ESM-2,
