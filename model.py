@@ -123,15 +123,15 @@ def evaluate(model, dataloader, device):
         for batch in dataloader:
             batch = {k: v.to(device) for k, v in batch.items()}
             
-            outputs = model(**batch) # Forward pass
+            outputs = model(**batch) # forward pass
             loss = outputs.loss
             
-            running_loss += loss.item() # Loss
+            running_loss += loss.item() # loss
 
             probs = torch.nn.functional.softmax(outputs.logits, dim=1) 
             positive_probs = probs[:, 1].cpu().numpy()
                        
-            preds = torch.argmax(outputs.logits, dim=1) # Accuracy
+            preds = torch.argmax(outputs.logits, dim=1) # accuracy
             correct += (preds == batch['labels']).sum().item()
             total += batch['labels'].size(0)
 
