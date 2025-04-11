@@ -46,12 +46,12 @@ models ability to generalise to unseen alleles.
     <table cellspacing="0" cellpadding="10" style="border-collapse: collapse;">
         <tr>
             <td align="center">
-                <img src="https://github.com/user-attachments/assets/c52fbaa9-35f1-4d19-b80a-57cd9295f7a0" width="400" style="border: 0px;" />
+                <img src="https://github.com/user-attachments/assets/c52fbaa9-35f1-4d19-b80a-57cd9295f7a0" width="400" style="border: none;" />
                 <br>
                 Accuracy
             </td>
             <td align="center">
-                <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" width="400" style="border: 0px;" />
+                <img src="https://github.com/user-attachments/assets/c8c66938-2e42-43dd-8982-5340f4e76149" width="400" style="border: none;" />
                 <br>
                 ROC-AUC
             </td>
