@@ -106,15 +106,15 @@ doi:https://doi.org/10.1038/s41573-021-00387-y.
 Li, G., Iyer, B., Prasath, V.B.S., Ni, Y. and Salomonis, N. (2021). DeepImmuno: deep learning-empowered prediction and generation of immunogenic peptides for T-cell immunity. Briefings in Bioinformatics,
 22(6). doi:https://doi.org/10.1093/bib/bbab160.
 
-Li, S., Tan, Y., Ke, S., Hong, L. and Zhou, B. (2024). Immunogenicity Prediction with Dual Attention Enables Vaccine Target
-Selection. arXiv (Cornell University). doi:https://doi.org/10.48550/arxiv.2410.02647.
+Li, S., Tan, Y., Ke, S., Hong, L. and Zhou, B. (2024). Immunogenicity Prediction with Dual Attention Enables Vaccine Target Selection. arXiv (Cornell University). 
+doi:https://doi.org/10.48550/arxiv.2410.02647.
 
 Lin, Z., Akin, H., Rao, R., Hie, B., Zhu, Z., Lu, W., Smetanin, N., Verkuil, R., Kabeli, O., Shmueli, Y., dos Santos Costa, A., Fazel-Zarandi, M., Sercu, T., Candido, S. and Rives, A. (2022). Evolutionary
 scale prediction of atomic level protein structure with a language model. BioRxiv. doi:https://doi.org/10.1101/2022.07.20.500902.
 
 Nguyen, A.T., Szeto, C. and Gras, S. (2021). The pockets guide to HLA class I molecules. Biochemical Society Transactions, 49(5), pp.2319–2331. doi:https://doi.org/10.1042/bst20210410.
-Pishesha, N., Harmand, T.J. and Ploegh, H.L. (2022). A guide to antigen processing and presentation. Nature Reviews Immunology, [online] 22(751-764), pp.1–14. doi:https://doi.org/10.1038/s41577-022-00707
-2.
+
+Pishesha, N., Harmand, T.J. and Ploegh, H.L. (2022). A guide to antigen processing and presentation. Nature Reviews Immunology, [online] 22(751-764), pp.1–14. doi:https://doi.org/10.1038/s41577-022-007072.
 
 Purcell, A.W., Ramarathinam, S.H. and Ternette, N. (2019). Mass spectrometry–based identification of MHC-bound peptides for immunopeptidomics. Nature Protocols, 14(6), pp.1687–1707.
 doi:https://doi.org/10.1038/s41596-019-0133-y.
