@@ -32,7 +32,7 @@ df = df[df['Related Object - Name'].apply(is_valid_sequence)]
 df['Assay - Qualitative Measurement'] = df['Assay - Qualitative Measurement'].apply(lambda x: 0 if x.startswith('N') or x.endswith('w') else 1)
 
 
-### matching hla column in neoantigen dataset to MHC sequences ###
+### matching hla column in neoantigen dataset to HLA sequences ###
 hla_check_df = pd.read_csv('MHC_Alleles.csv')
 
 def match_seq(hla_check,dataset,mhc_column):
@@ -53,7 +53,7 @@ df = df.merge(assay_alleles, left_on='MHC Restriction - Name', right_on='HLA All
 df = df.drop(columns=['HLA Allele', 'MHC Restriction - Name'])
 df = df.dropna()
 
-### merging peptide sequence and HLA sequence ###
+### merging peptide sequences and HLA sequence ###
 df["merged_sequence"] = df["Related Object - Name"].str.ljust(12, "X") + ("|") + df["Epitope - Name"].str.ljust(12, "X") + ("|") + df["Sequence"]
 df = df[["merged_sequence", "Assay - Qualitative Measurement"]]
 
@@ -67,6 +67,6 @@ df = df_filtered.reset_index(drop=True)
 class_counts = df['Assay - Qualitative Measurement'].value_counts() # getting class counts
 min_class_count = class_counts.min()
 
-df_balanced = df.groupby('Assay - Qualitative Measurement', group_keys=False).apply(lambda x: x.sample(min_class_count, random_state=42)) # # undersample the majority class
+df_balanced = df.groupby('Assay - Qualitative Measurement', group_keys=False).apply(lambda x: x.sample(min_class_count, random_state=42)) # undersample the majority class
 df_balanced = df_balanced.sample(frac=1, random_state=42).reset_index(drop=True) # shuffeling the dataset
 df_balanced.to_csv('CEDAR_biological_activity.csv', index=False) # exporting data
