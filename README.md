@@ -100,7 +100,7 @@ doi:https://doi.org/10.1038/s41586-021-03819-2.
 Jurtz, V., Paul, S., Andreatta, M., Marcatili, P., Peters, B. and Nielsen, M. (2017). NetMHCpan-4.0: Improved Peptide–MHC Class I Interaction Predictions Integrating Eluted Ligand and Peptide Binding
 Affinity Data. The Journal of Immunology, 199(9), pp.3360–3368. doi:https://doi.org/10.4049/jimmunol.1700893.
 
-Lang, F., Schrörs, B., Löwer, M., Türeci, Ö. and Sahin, U. (2022). Identification of neoantigens for individualized therapeutic cancer vaccines. Nature Reviews Drug Discovery, 21(4), pp.261–282.
+Lang, F., Schrörs, B., Löwer, M., Türeci, Ö. and Sahin, U. (2022). Identification of neoantigens for individualized therapeutic cancer vaccines. Nature Reviews Drug Discovery, 21(4), pp.261–282. 
 doi:https://doi.org/10.1038/s41573-021-00387-y.
 
 Li, G., Iyer, B., Prasath, V.B.S., Ni, Y. and Salomonis, N. (2021). DeepImmuno: deep learning-empowered prediction and generation of immunogenic peptides for T-cell immunity. Briefings in Bioinformatics,
