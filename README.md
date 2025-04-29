@@ -4,10 +4,11 @@ Fine-tuning ESM-2 using LoRA for neoantigen immunogenicity prediction
 ## Introduction:
 Somatic mutations in cancerous cells can result in tumor-specific antigens (neoantigens) presented by the major histocompatibility complex, which are recognized by the host's immune system (Lang et al.,
 2022; Pishesha, Harmand and Ploegh, 2022). Recent advancements in genomic sequencing and proteomics have allowed for accurate identification of potentially immunogenic neoantigens that can facilitate a
-humoral immune response (Fang et al., 2022; Purcell, Ramarathinam and Ternette, 2019). Predicting which neoantigens produce an immune response remains an important challenge in developing neoantigen
-vaccines (Carri et al., 2023; Li et al., 2021). Common approaches rely heavily on binding affinity of the peptide-MHC complex (pMHC), neglecting important immunological features hindering predictive
-ability (Jurtz et al., 2017; Shao et al., 2020). Recent methods have incorporated immunologically informed features such as host and mutated peptide dissimilarity, pMHC stability, and T cell selectivity
-(Albert et al., 2023; Li et al., 2024). Due to limited and biased datasets, immunologically informed models still struggle to capture the complex relationships that determine neoantigen immunogenicity. 
+humoral and cell mediated immune response (Fang et al., 2022; Purcell, Ramarathinam and Ternette, 2019). Predicting which neoantigens produce an immune response remains an important challenge in
+developing neoantigen vaccines (Carri et al., 2023; Li et al., 2021). Common approaches rely heavily on binding affinity of the peptide-MHC complex (pMHC), neglecting important immunological features
+hindering predictive ability (Jurtz et al., 2017; Shao et al., 2020). Recent methods have incorporated immunologically informed features such as host and mutated peptide dissimilarity, pMHC stability, and
+T cell selectivity (Albert et al., 2023; Li et al., 2024). Due to limited and biased datasets, immunologically informed models still struggle to capture the complex relationships that determine neoantigen
+immunogenicity. 
 
 This project proposes the use of protein language models, trained on extensive amino acid sequence datasets. Protein language models harnessing the network architecture of large language models have become
 widely used for learning structural and functional features of proteins based on sequence alone (Brandes et al., 2022; Jumper et al., 2021). Features learned can aid in prediction tasks where data
